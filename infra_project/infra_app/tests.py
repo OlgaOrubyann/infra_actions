@@ -20,7 +20,7 @@ class StaticPagesURLTests(TestCase):
         with self.subTest(address='/second/'):
             response = self.guest_client.get('/second/')
             self.assertEqual(response.status_code, HTTPStatus.OK)
-        
+
     # def test_page_shows_correct_content(self):
     #     """Проверка контента страниц."""
     #     response = self.guest_client.get('/')
